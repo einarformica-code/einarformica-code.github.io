@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Contacto</title>
+        <a href="../index.html"> Volver al index</a>
         <style>
             body{
                 background-color:lightsteelblue;
@@ -9,17 +10,18 @@
         </style>
     </head>
 <body>
+<form action="https://lm.ciclo.iesnervion.es/form3/envio.php" method="post" enctype="multipart/form-data">
 
     <legend>Informacion de contacto</legend>
-    <label for ="name">Nombre</label>
-    <input type="text" id="name"><br>
-    <label for="Email">Email</label>
-    <input type="text" id="Email"><br>
-    <textarea name="mensaje" placeholder="Mensaje" required></textarea><br>
+    <label for ="nombre">Nombre</label>
+    <input type="text" id="Nombre" name="nombre"><br>
+    <label for="correo">Email:</label>
+    <input type="email" id="correo" name="correo"><br>
+    <textarea name="mensaje" placeholder="mensaje" required></textarea><br>
     <label for ="imagen">Subir imagen</label>
     <input type ="file" id="imagen" name="imagen" accept="image/*"><br>
     <button type="submit">Enviar</button><br>
-    
+    </form>
 </body>
 
 
