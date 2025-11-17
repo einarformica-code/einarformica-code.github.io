@@ -1,5 +1,10 @@
 <!DOCTYPE html lang = "es">
 <html>
+   <head>
+
+         <head><link rel="stylesheet" href="../css/estillo.css"></head>
+   </head>
+   <body>
 <header>
     <h1>Code Fest 2025</h1>
     <!--Cabecera principal-->
@@ -10,10 +15,10 @@
 
 <nav>
 <ul>
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="web/cartel.html">Cartel</a></li>
-    <li><a href="web/localizacion.html">Localización</a></li>
-    <li><a href="web/entradas.html">Entradas</a></li>
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="cartel.html">Cartel</a></li>
+    <li><a href="localizacion.html">Localización</a></li>
+    <li><a href="entradas.html">Entradas</a></li>
 
 </ul>
 <!-- Lista no organizada con enlaces a las páginas que crearemos-->
@@ -50,11 +55,33 @@
         <!--Etiqueta entrada de día-->
         <input type="radio" id="Entrada de Día" name="entrada" value="Entrada de Día">
         <!--Campo input abono VIP-->
-     </fieldset>
-     <fieldset>
+     </fieldset><!--Cierre tipo de entrada-->
+
+     <fieldset><!--Apertura extras-->
      <legend>Extras</legend>
+     <label for = "Camping">Camping</label>
+     <input type="checkbox" id="Camping" name="extras" value="Camping"><br><br>
+
+     <label for ="Pack Merchandising">Pack Merchandising</label>
+       <input type="checkbox" id="Pack Merchandising" name="extras" value="Pack Merchandising"><br><br>
+
+       <label for ="Acceso a Talleres Tech">Acceso a Talleres Tech</label>
+       <input type="checkbox" id="Acceso a Talleres Tech" name="extras" value="Acceso a Talleres Tech"><br><br>
      
-      </fieldset> 
+       
+      </fieldset> <!--Cierre extras-->
+      <fieldset>
+         <legend>Día (Solo si es Entrada de Día)</legend>
+         <select value ="0">
+            <option>Viernes</option>
+            <option>Sábado</option>
+            <option>Domingo</option>   
+         </select>
+
+
+      </fieldset>
+
+   <button type="submit"> Enviar</button>
 
    </form>
 </main>
@@ -64,6 +91,6 @@
 <p>© 2025 CodeFest. Todos los derechos reservados.</p>
 </footer>
 
-
+</body>
 
 </html>
